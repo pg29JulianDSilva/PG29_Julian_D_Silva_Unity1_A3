@@ -33,12 +33,15 @@ public class theWeapons : MonoBehaviour
             Shoot();
         }
 
+    }
+
+    void FixedUpdate()
+    {
         //It change the prefab for the instance process
         if (Input.GetKey(_weaponSwap))
         {
             Change();
         }
-
     }
 
     //Changes the index of the weapon
@@ -52,6 +55,7 @@ public class theWeapons : MonoBehaviour
         {
             _weaponIndex++;
         }
+
     }
 
     //Instantiate the selected bullet
